@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {  /* tsc 명령 형식에서 옵션을 나타냄 */
+    "module": "commonjs", /* 브라우저(amd), nodejs(commonjs) */
+    "esModuleInterop": true,
+    "target": "es5",  /* 트랜스파일할 대상 자바스크립트의 버전을 설정 */
+    "moduleResolution": "node", /* 브라우저(classic), nodejs(node) */
+    "outDir": "dist",
+    "baseUrl": ".",
+    "sourceMap": true, /* true이면 트랜스파일 디렉터리에는 .js파일 이외에도 .js.map 파일이 만들어진다. 이 소스맵 파일은 변환된 자바스크립트 코드가 타입스크립트 코드의 어디에 해당하는지를 알려준다. 디버깅할 때 주로 사용된다 */
+    "downlevelIteration": true,
+    "noImplicitAny": false, /* false로 설정하면 타입을 지정하지 않더라도 문제로 인식하지 않는다 */
+    "paths": {"*": ["node_modules/*"]}  /* 소스 파일의 import 문에서 from 부분을 해석할 때 찾아야 하는 디렉터리를 설정한다 */
+  },
+  "include": ["src/**/*"] /* 대상 파일 목록을 나타냄 */
+}

@@ -1,0 +1,1 @@
+export const join = (strArray: string[], delim=''): string => strArray.join(delim)
