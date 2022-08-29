@@ -1,0 +1,1 @@
+export const mergedObjects = <T, U>(a: T, b: U): T&U => ({...a, ...b})
